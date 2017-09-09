@@ -283,7 +283,6 @@ impl<T, A: Alloc> RawVec<T, A> {
     /// #   vec.push(1);
     /// # }
     /// ```
-    #[inline(never)]
     #[cold]
     pub fn double(&mut self) {
         unsafe {
